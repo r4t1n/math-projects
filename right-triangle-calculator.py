@@ -3,11 +3,11 @@
 import math
 
 def get_user_input(): # Get the two identifiers and values to calculate the scenario and the triangle
-    identifier_1 = input(" Enter the first identifier: ")
-    value_1 = float(input(" Enter the first value: "))
+    identifier_1 = input("> Enter the first identifier: ")
+    value_1 = float(input("> Enter the first value: "))
     
-    identifier_2 = input(" Enter the second identifier: ")
-    value_2 = float(input(" Enter the second value: "))
+    identifier_2 = input("> Enter the second identifier: ")
+    value_2 = float(input("> Enter the second value: "))
 
     calculate_scenario(identifier_1, value_1, identifier_2, value_2)
 
@@ -42,7 +42,7 @@ def calculate_scenario(identifier_1, value_1, identifier_2, value_2): # There ar
                 calculate_c_and_B(value_1, value_2)
         
     else:
-        print("\n The identifiers are either not valid or not in correct order, check the README.md")
+        print("\nThe identifiers are either not valid or not in correct order, check the README.md")
 
 def calculate_a_and_b(value_1, value_2):
     a = value_1
@@ -135,12 +135,12 @@ def calculate_c_and_B(value_1, value_2):
     print_values(a, b, c, A, B)
 
 def print_values(a, b, c, A, B):
-    print(f"\n a: {a:.2f}")
-    print(f" b: {b:.2f}")
-    print(f" c: {c:.2f}")
-    print(f" A: {A:.2f}")
-    print(f" B: {B:.2f}")
-    print(" C: 90")
+    print(f"\n  a: {a:.2f}")
+    print(f"  b: {b:.2f}")
+    print(f"  c: {c:.2f}")
+    print(f"  A: {A:.2f}")
+    print(f"  B: {B:.2f}")
+    print("  C: 90")
 
 if __name__ == "__main__":
     get_user_input()
