@@ -1,11 +1,10 @@
-#! /bin/env python3
+#! /usr/bin/env python3
 
 import math
 
 def get_user_input(): # Get the two identifiers and values to calculate the scenario and the triangle
     identifier_1 = input("> Enter the first identifier: ")
-    value_1 = float(input("> Enter the first value: "))
-    
+    value_1 = float(input("> Enter the first value: ")) 
     identifier_2 = input("> Enter the second identifier: ")
     value_2 = float(input("> Enter the second value: "))
 
